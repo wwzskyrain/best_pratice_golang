@@ -1,6 +1,6 @@
 module github.com/pratice/golang
 
-go 1.21.5
+go 1.17
 
 require (
 	github.com/bitly/go-simplejson v0.5.1
