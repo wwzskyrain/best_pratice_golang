@@ -29,4 +29,13 @@ func testAppendValueToSliceWhenSliceIsMapValue() {
 
 func main() {
 	testAppendValueToSliceWhenSliceIsMapValue()
+	Test_Npe()
+}
+
+func Test_Npe() {
+	names := []string{"1", "2"}
+	var siteIdMap = make(map[string]bool)
+	for _, name := range names {
+		siteIdMap[name] = true
+	}
 }
