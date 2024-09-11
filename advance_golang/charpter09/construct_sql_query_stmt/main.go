@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-// chapter9/sources/go-reflect/main.go
+// chapter9/sources/go-reflect/benchmark_intr_test.go
 
 func ConstructQueryStmt(obj interface{}) (stmt string, err error) {
 	// 仅支持struct或struct指针类型

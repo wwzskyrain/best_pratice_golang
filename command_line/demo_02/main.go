@@ -30,6 +30,24 @@ func buildContext() context.Context {
 }
 
 func main() {
-	ctx := buildContext()
-	log.Printf("from_time = %s, to_time = %s", ctx.Value("from_time"), ctx.Value("to_time"))
+	// ctx := buildContext()
+	// log.Printf("from_time = %s, to_time = %s", ctx.Value("from_time"), ctx.Value("to_time"))
+
+	// model := parseRunModel()
+	// log.Printf("mode = %s\n", model)
+	// model, fromTime, toTime := parseTimeWindow()
+	// log.Printf("model=%s, fromTime=%s, toTime=%s \n", model, fromTime, toTime)
+	runModel, fromTime, toTime := parseParamFromCommandLine()
+	if runModel == "test" {
+		log.Printf("runModel=%s", runModel)
+	}
+	log.Printf("fromTime=%s, toTime=%s", fromTime, toTime)
+
+}
+func parseParamFromCommandLine() (runModel, fromTime, toTime string) {
+	flag.StringVar(&runModel, "run_model", "", "运行模式")
+	flag.StringVar(&fromTime, "from_time", "", "扫描的开始时间")
+	flag.StringVar(&toTime, "to_time", "", "扫描的结束时间")
+	flag.Parse() // 需要主动parse, 否则无法获取到参数的值.
+	return
 }
