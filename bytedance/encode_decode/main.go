@@ -5,6 +5,7 @@ import (
 	bdencrypt "code.byted.org/dp/bytedance_encdec/encrypt"
 )
 
+// 公司的加解密代码库： https://bits.bytedance.net/code/dp/bytedance_encdec
 func main() {
 
 	rawData := "我是一条raw数据"

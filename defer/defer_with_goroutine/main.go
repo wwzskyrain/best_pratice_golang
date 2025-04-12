@@ -11,6 +11,8 @@ func main() {
 	logWithMethodName("main", "start--->")
 	testWhenDeferRunWithGoroutine()
 	time.Sleep(10 * time.Second)
+	// 注释掉这一句，则main函数会立刻结束，
+	// 然后go-routine就只说一句“这是goroutine函数=睡一会”就没有下一句了
 	logWithMethodName("main", "end!!!")
 }
 
@@ -22,7 +24,7 @@ func testWhenDeferRunWithGoroutine() {
 	}()
 	go func() {
 		log.Println("这是goroutine函数=睡一会")
-		time.Sleep(5 * time.Second)
+		time.Sleep(1 * time.Millisecond)
 		log.Println("这是goroutine函数=睡好了，结束！")
 	}()
 	logWithMethodName(methodName, "end")
