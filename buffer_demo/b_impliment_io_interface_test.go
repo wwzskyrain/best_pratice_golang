@@ -17,3 +17,7 @@ func Test_asReadFrom(t *testing.T) {
 func Test_asFileWriter(t *testing.T) {
 	asFileWriter()
 }
+
+func Test_asReaderAndWriter(t *testing.T) {
+	asReaderAndWriter()
+}

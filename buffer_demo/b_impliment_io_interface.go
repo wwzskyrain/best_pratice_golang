@@ -59,6 +59,27 @@ func asIoReader() {
 	fmt.Printf("Decompressed: %s\n", decompressed) // 输出: "hello"
 }
 
+// 一个作为reader一个作为writer，使用io.Copy方法来读和写.
+func asReaderAndWriter() {
+	source := bytes.NewBuffer([]byte("hello world"))
+	var destination bytes.Buffer
+	_, err := io.Copy(&destination, source)
+	if err == nil {
+		fmt.Println(destination.String())
+	}
+
+	fmt.Printf("---自己实现copy哈---\n")
+	// 当然你去看Copy的实现，有意思呢
+	r := bytes.NewBuffer([]byte("hello world"))
+	var w bytes.Buffer
+	n, err := r.WriteTo(&w)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Printf("复制了多少字节：%d\n", n)
+	fmt.Printf("w的内容：%s\n", w.String())
+}
+
 // 读文件，读到buffer中
 func asReadFrom() {
 	var buf bytes.Buffer
