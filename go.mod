@@ -10,6 +10,7 @@ require (
 	code.byted.org/middleware/hertz v1.13.7
 	github.com/Masterminds/squirrel v1.5.4
 	github.com/bitly/go-simplejson v0.5.1
+	github.com/cloudwego/hertz v0.9.6
 	github.com/codegangsta/inject v0.0.0-20150114235600-33e0aa1cb7c0
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
 	github.com/huandu/go-tls v1.0.1
@@ -49,7 +50,7 @@ require (
 	github.com/caarlos0/env/v6 v6.2.2 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect
-	github.com/cloudwego/hertz v0.9.6 // indirect
+	github.com/cloudwego/netpoll v0.6.4 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/go-fonts/latin-modern v0.3.1 // indirect
