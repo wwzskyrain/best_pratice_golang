@@ -10,6 +10,7 @@ require (
 	code.byted.org/middleware/hertz v1.13.7
 	github.com/Masterminds/squirrel v1.5.4
 	github.com/bitly/go-simplejson v0.5.1
+	github.com/bytedance/mockey v1.2.12
 	github.com/cloudwego/hertz v0.9.6
 	github.com/codegangsta/inject v0.0.0-20150114235600-33e0aa1cb7c0
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
@@ -18,6 +19,7 @@ require (
 	github.com/pdfcrowd/pdfcrowd-go v0.0.0-20240319150740-afae11b81f70
 	github.com/redis/go-redis/v9 v9.5.1
 	github.com/sergi/go-diff v1.3.1
+	github.com/smartystreets/goconvey v1.7.2
 	github.com/tdewolff/canvas v0.0.0-20240407210806-e89965a0c7c9
 	github.com/tidwall/gjson v1.18.0
 	github.com/yosssi/gohtml v0.0.0-20201013000340-ee4748c638f4
@@ -61,9 +63,11 @@ require (
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/gopherjs/gopherjs v1.17.2 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/jtolds/gls v4.20.0+incompatible // indirect
 	github.com/k3a/html2text v1.2.1 // indirect
 	github.com/klauspost/compress v1.15.9 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
@@ -75,6 +79,7 @@ require (
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // indirect
 	github.com/nyaruka/phonenumbers v1.0.55 // indirect
 	github.com/pierrec/lz4/v4 v4.0.2 // indirect
+	github.com/smartystreets/assertions v1.2.0 // indirect
 	github.com/tdewolff/font v0.0.0-20240404204409-be214eafe484 // indirect
 	github.com/tdewolff/minify/v2 v2.20.5 // indirect
 	github.com/tdewolff/parse/v2 v2.7.3 // indirect
